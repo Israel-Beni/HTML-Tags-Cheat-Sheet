@@ -91,7 +91,7 @@
                         </div>
 
                         <div class="tag-element">
-                            <h3 id="input-number-type" ><code>&lt;input</code>: Number Type</h3>
+                            <h3 id="input-number-type" ><code>&lt;input&gt;</code>: Number Type</h3>
                             <div class="current-tag">
                                 <div class="tag-description">
                                     <p>
@@ -748,5 +748,30 @@
                 </section>
             </div>
         </main>
+
+        <!-- Adding of scroll to Top Button functionality -->
+        <button onclick="topFunction()" id="myButton" title="To top">Top</button>
+        <script>
+            // Get the button
+            var theButton= document.getElementById("myButton");
+
+            // Wheb the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() { scrollFunction() };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    theButton.style.display = "block";
+                } else {
+                    theButton.style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
     </body>
+
 </html>
