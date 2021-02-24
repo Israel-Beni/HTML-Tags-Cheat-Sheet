@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Cheat Sheet</title>
+        <link href="styles.css" type="text/css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <header>
+            <div class="cheat-sheet">
+                <p>
+                    <span class="cheat-sheet-text">Cheat Sheet </span>
+                    <span class="separator">/ </span>
+                    <span class="html-tags">HTML Tags</span>
+                </p>
+                <h1>
+                    Forms
+                </h1>
+            </div>
+        </header>
+
+        <main>
+            <div class="main-content-container">
+                <div class="navigation-containner">
+                    <nav>
+                        <h2>TAGS</h2>
+                        <div class="table-of-content-container">
+                            <a href="#input-checkbox-type" class="table-of-content"><code>&lt;input&gt;: Checkbox Type</code></a>
+                            <a href="#input-number-type" class="table-of-content"><code>&lt;input&gt;: Number type</code></a>
+                            <a href="#input-element" class="table-of-content"><code>&lt;input&gt; Element</code></a>
+                            <a href="#input-range-type" class="table-of-content"><code>&lt;input&gt; Range Type</code></a>
+                            <a href="#input-text-type" class="table-of-content"><code>&lt;input&gt; Text Type</code></a>
+                            <a href="#input-radio-button-type" class="table-of-content"><code>&lt;input&gt; Radio Button Type</code></a>
+                            <a href="#input-name-attribute" class="table-of-content"><code>&lt;input&gt; name Attribute</code></a>
+                            <a href="#input-password-type" class="table-of-content"><code>&lt;input&gt; Password Type</code></a>
+
+                            <a href="#textarea-element" class="table-of-content"><code>&lt;textarea&gt; Element</code></a>
+                            <a href="#form-element" class="table-of-content"><code>&lt;form&gt; Element</code></a>
+                            <a href="#select-element" class="table-of-content"><code>&lt;select&gt; Element</code></a>
+                            <a href="#submitting-a-form" class="table-of-content"><code>Submitting a Form</code></a>
+                            <a href="#datalist-element" class="table-of-content"><code>&lt;datalist&gt; Element</code></a>
+                            <a href="#submittable-input" class="table-of-content"><code>Submittable Input</code></a>
+                            <a href="#label-element" class="table-of-content"><code>&lt;label&gt; Element</code></a>
+                            <a href="#required-attribute" class="table-of-content"><code>required Attribute</code></a>
+                            <a href="#max-attribute" class="table-of-content"><code>max Attribute</code></a>
+                            <a href="#maxlength-attribute" class="table-of-content"><code>maxlength Attribute</code></a>
+                            <a href="#pattern-attribute" class="table-of-content"><code>pattern Attribute</code></a>
+                            <a href="#minlength-attribute" class="table-of-content"><code>minlength Attribute</code></a>
+                            <a href="#html-form-validators" class="table-of-content"><code>HTML Form Validators</code></a>
+                            <a href="#min-attribute" class="table-of-content"><code>min Attribute</code></a>
+                        </div>
+                    </nav></div>
+
+                <section>
+                    <div class="tag-elements">
+                        <div class="tag-element">
+                            <h3 id="input-checkbox-type"><code>&lt;input&gt;</code>: Checkbox Type</h3>
+                            <div class="current-tag">
+                                <div class="tag-description">
+                                    <p>
+                                        When using an HTML <code>input</code> element, the <code>type="checkbox"</code> attribute will render a single checkbox item. 
+                                        To create a group of checkboxes related to the same topic, they should all use the <code>name</code> attribute. Since it's a Checkbox,
+                                        multiple checkboxes can be selected for the same topic.
+                                    </p>
+                                </div>
+
+                                <div class="code-illustration-container">
+                                    <code data-lang="html5" class="illustration-code">
+                                        <span class="tag">&lt;input</span>
+                                        <span class="attribute">type</span>=
+                                        <span class="value">"checkbox"</span> 
+                                        <span class="attribute">name</span>=
+                                        <span class="value">"breakfast"</span>
+                                        <span class="attribute">value</span>=<span class="value">"bacon"</span><span class="tag">/&gt;</span>Bacon 🥓<span class="tag">&lt;br/&gt;</span><br/>
+                                        <span class="tag">&lt;input</span>
+                                        <span class="attribute">type</span>=
+                                        <span class="value">"checkbox"</span>
+                                        <span class="attribute">name</span>=
+                                        <span class="value">"eggs"</span><span class="tag">/&gt;</span>Eggs <span class="tag">&lt;br/&gt;</span>
+                                        <br/>
+                                        <span class="tag">&lt;input</span>
+                                        <span class="attribute">type</span>=
+                                        <span class="value">"checkbox"</span>
+                                        <span class="attribute">name</span>=
+                                        <span class="value">"breakfast"</span>
+                                        <span class="attribute">value</span>=
+                                        <span class="value">pancakes</span><span class="tag">/&gt;</span>Pancakes 🥞<span class="tag">&lt;br&gt;</span>
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tag-element">
+                            <h3 id="input-number-type" ><code>&lt;input</code>: Number Type</h3>
+                            <div class="current-tag">
+                                <div class="tag-description">
+                                    <p>
+                                        HTML input elements can be of type <code>number</code>. These input fields allow the user to enter only numbers and a few
+                                        special characters inside the field.
+                                    </p>
+                                    <p>
+                                        The example code block shows an input with a type of <code>number</code> and a name of <code>balance</code>. When the input field is 
+                                        part of a form, the form will receive a key-value pair with the format: <code>name: value</code> after form submission.
+                                    </p>
+                                </div>
+
+                                <div class="code-illustration-container">
+                                    <code data-lang="html5">
+                                        <span class="tag">&lt;input</span>
+                                        <span class="attribute">type</span>=
+                                        <span class="value">"number"</span>
+                                        <span class="attribute">name</span>=
+                                        <span class="value">"balance</span>
+                                        <span class="tag">/&gt;</span>
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tag-element">
+                            <h3 id="input-element"><code>&lt;input&gt;</code> Element</h3>
+                            <div class="current-tag">
+                                <div class="tag-description">
+                                    <p>
+                                        The HTML <code>&lt;input&gt;</code> element is used to render a variety of input fields on a webpage including text fields, 
+                                        checkboxes, buttons, etc. <code>&lt;input&gt;</code> element have a <code>type</code> attribute that determines how it gets rendered 
+                                        to a page.
+                                    </p>
+                                    <p>
+                                        The example code block will create a text input field and a checkbox input field on a webpage.
+                                    </p>
+                                </div>
+
+                                <div class="code-illustration-container">
+                                    <code>
+                                        <span class="tag">&lt;label</span>
+                                        <span class="attribute">for</span>
+                                        <span class="value">"nrame"</span>First name:
+                                        <span class="tag">&lt;label&gt;</span>
+                                        <br/>
+                                        <span class="tag">&lt;input</span>
+                                        <span class="attribute">type</span>=
+                                        <span class="value">"text"</span>
+                                        <span class="attribute">name</span>=
+                                        <span class="value">"frame"</span>
+                                        <span class="attribute">id</span>
+                                        <span class="value">"fname"</span><span class="tag">&lt;br/&gt;</span>
+                                        <br/><br/>
+                                        <span class="tag">&lt;input</span>
+                                        <span class="attribute">type</span>=
+                                        <span class="value">"checkbox"</span>
+                                        <span class="attribute">name</span>=
+                                        <span class="value">"vehicle"</span>
+                                        <span class="attribute">value</span>=
+                                        <span class="value">"Bike"</span><span class="tag">&gt;</span>I own a bike
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tag-element">
+                            <h3 id="input-range-type"><code>&lt;input&gt;</code>: Range Type</h3>
+                            <div class="current-tag">
+                                <div class="tag-description">
+                                    <p>
+                                        A slider can be created by using the <code>type="range"</code> attribute on an HTML <code>input</code> element. 
+                                        The range slider will act as a selector between a minimum and a maximum value. These values are et using the <code>min</code> and 
+                                        <code>max</code> attributes respectively. The slider can be adjusted to move in different steps or increments usning the <code>
+                                            step
+                                        </code> attribute.
+                                    </p>
+                                    <p>
+                                        The range slider is meant to act more as a visual widget to adjust between 2 values, where the relative position is important. An example
+                                        of this can be adjusting the volume level of an application.
+                                    </p>
+                                </div>
+
+                                <div class="code-illustration-container">
+                                    <code>
+                                        <span class="tag">&lt;input</span>
+                                        <span class="attribute">type</span>=
+                                        <span class="value">"range"</span>
+                                        <span class="attribute">name</span>=
+                                        <span class="value">"movie-rating"</span>
+                                        <span class="attribute">min</span>=
+                                        <span class="value">"0"</span>
+                                        <span class="attribute">max</span>=
+                                        <span class="value">"10"</span>
+                                        <span class="attribute">step</span>
+                                        <span class="value">"0.1"</span>
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="tag-element">
+                            <h3 id="input-text-type"><code>&lt;input&gt;</code>: Text Type</h3>
+                            <div class="current-tag">
+                                <div class="tag-description">
+                                    <p>
+                                        HTML <code>&lt;input&gt;</code> elements can support text input by setting the attribute <code>type="text"</code>. 
+                                        This renders a single row input field that users can type text inside.
+                                    </p>
+                                    <p>
+                                        The value of the <code>&lt;input&gt;</code>'s <code>name</code> and <code>value</code> attribute of the element are 
+                                        sent as a key-value pair when the form is submitted.
+                                    </p>
+                                </div>
+
+                                <div class="code-illustration-container">
+                                    <code>
+                                        <span class="tag">&lt;input</span>
+                                        <span class="attribute">type</span>=
+                                        <span class="value">"text"</span>
+                                        <span class="attribute">name</span>=
+                                        <span class="value">"username"</span>
+                                        <span class="tag">&gt;</span>
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tag-element">
+                            <h3 id="input-radio-button-type"><code>&lt;input&gt;</code>: Radio Button Type</h3>
+                            <div class="current-tag">
+                                <div class="tag-description">
+                                    <p>
+                                        HTML <code>&lt;input&gt;</code> elements can be given a <code>type="radio"</code> attribute that renders a single radio button. 
+                                        Multiple radio buttons of a related topic are given the same <code>name</code> attribute value. Only single option can be chosen from 
+                                        a group of radio buttons.
+                                        This renders a single row input field that users can type text inside.
+                                    </p>
+                                    <p>
+                                        The value of the selected/checked <code>&lt;input&gt;</code>'s <code>name</code> and <code>value</code> attribute of thsi element are 
+                                        sent as a key-value pair when the form is submitted.
+                                    </p>
+                                </div>
+
+                                <div class="code-illustration-container">
+                                    <code>
+                                        <span class="tag">&lt;input</span>
+                                        <span class="attribute">type</span>=
+                                        <span class="value">"radio"</span>
+                                        <span class="attribute">name</span>=
+                                        <span class="value">"delivery-option"</span>
+                                        <span class="attribute">value</span>=
+                                        <span class="value">"delivery"</span>
+                                        <span class="tag">/&gt;</span>
+                                        <br/>
+                                        <span class="tag">&lt;input</span>
+                                        <span class="attribute">type</span>=
+                                        <span class="value">"radio"</span>
+                                        <span class="attribute">name</span>=
+                                        <span class="value">"delivery-option"</span>
+                                        <span class="attribute">value</span>=
+                                        <span class="value">"pickup"</span>
+                                        <span class="tag">/&gt;</span>
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tag-element">
+                            <h3 id="input-name-attribute"><code>&lt;input&gt;</code> name Attribute</h3>
+                            <div class="current-tag">
+                                <div class="tag-description">
+                                    <p>
+                                        In order for a form to send data, it needs to be able to put it into key-value pairs. This is achieved by "settings": [
+                                        the <code>name</code> attribute of the <code>input</code> element. The <code>name</code> will become the <code>key</code> and the <code>value</code> of the 
+                                        input will become the <code>value</code> the form submits corresponding to the key.
+                                    </p>
+                                    <p>
+                                        It's important to remember that the name is not the same as the ID in terms of form submission. The ID and the name  of the 
+                                        input may be the same, but the value will only be submitted if the <code>name</code> attribute is specified.
+                                    </p>
+                                    <p>
+                                        In the code example, the first input will be submitted by the form, but the second one will not.
+                                    </p>
+                                </div>
+
+                                <div class="code-illustration-container">
+                                    <code>
+                                        <span class="tag">&lt;input</span>
+                                        <span class="attribute">name</span>=
+                                        <span class="value">"username"</span>
+                                        <span class="attribute">id</span>=
+                                        <span class="value">"username"</span>
+                                        <span class="tag">/&gt;</span>
+                                        <br/>
+                                        <span class="tag">&lt;input</span>
+                                        <span class="attribute">id</span>=
+                                        <span class="value">"address"</span>
+                                        <span class="tag">/&gt;</span>
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tag-element">
+                            <h3 id="input-password-type"><code>&lt;input&gt;</code> Password Type</h3>
+                            <div class="current-tag">
+                                <div class="tag-description">
+                                    <p>
+                                        The HTML <code>&lt;input&gt;</code> elements can have the attribute <code>type="radio"</code>  that renders a single row input field. 
+                                        which allows the user to type censored text inside the field. It is used to type in sensitive information.
+                                    </p>
+                                    <p>
+                                        The value of this <code>&lt;input&gt;</code>'s <code>name</code> and <code>value</code> (actual value and not the censored version) attribute of this element are 
+                                        sent as a key-value pair when the form is submitted.
+                                    </p>
+                                    <p>
+                                        The code block shows an example of fields for a a basic login form - the username and password fields.
+                                    </p>
+                                </div>
+
+                                <div class="code-illustration-container">
+                                    <code>
+                                        <span class="tag">&lt;input</span>
+                                        <span class="attribute">type</span>=
+                                        <span class="value">"text"</span>
+                                        <span class="attribute">name</span>=
+                                        <span class="value">"username"</span>
+                                        <span class="tag">/&gt;</span>
+                                        <br/>
+                                        <span class="tag">&lt;input</span>
+                                        <span class="attribute">type</span>=
+                                        <span class="value">"password"</span>
+                                        <span class="attribute">name</span>=
+                                        <span class="value">"password"</span>
+                                        <span class="tag">/&gt;</span>
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tag-element">
+                            <h3 id="textarea-element"><code>&lt;textarea&gt;</code> Element</h3>
+                            <div class="current-tag">
+                                <div class="tag-description">
+                                    <p>
+                                        The <code>textarea</code> element is used when creating a text-box for multi-line input (e.g. a comment section). The element
+                                        supports the <code>rows</code> and <code>cols</code> attributes which determine the height and width, respectively, of the element.
+                                    </p>
+                                    <p>
+                                        When rendered by the browser, <code>textarea</code> fields can be stretched/shrunk in by the user, but the <code>rows</code> and 
+                                        <code>cols</code> attributes determine the initial size.
+                                    </p>
+                                    <p>
+                                        Unlike the <code>input</code> element, the <code>textarea</code> element has both opening and closing tags. The <code>value</code> 
+                                        of the element is the content in between these tags (much like a <code>&lt;p&gt;</code> element). The code block shows a <code>textarea</code> 
+                                        of size 10&times;30 and with a <code>name</code> of <code>"comment"</code>.
+                                    </p>
+                                </div>
+
+                                <div class="code-illustration-container">
+                                    <code data-lang="htm5">
+                                        <span class="tag">&lt;textarea</span>
+                                        <span class="attribute">rows</span>=
+                                        <span class="value">"10"</span>
+                                        <span class="attribute">cols</span>=
+                                        <span class="value">"30"</span>
+                                        <span class="attribute">name</span>=
+                                        <span class="value">"comment"</span>
+                                        <span class="tag">&gt;</span><span class="tag">&lt;textarea&gt;</span>
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="tag-element">
+                            <h3 id="form-element"><code>&lt;form&gt;</code> Element</h3>
+                            <div class="current-tag">
+                                <div class="tag-description">
+                                    <p>
+                                        The HTML <code>form</code> element is used to collect and send information to an external sourse.
+                                    </p>
+                                    <p>
+                                        <code>form</code> can contain various input elements. When a user submits the form, information in these input
+                                        elements is passed to the source which is named in the <code>action</code> attribute of the form.
+                                    </p>
+                                </div>
+                                    
+                                <div class="code-illustration-container">
+                                    <code data-lang="htm5">
+                                        <span class="tag">&lt;form&gt;</span>
+                                        <span class="attribute">method</span>=
+                                        <span class="value">"post"</span>
+                                        <span class="attribute">action</span>=
+                                        <span class="value">"http://server1"</span><span class="tag">&gt;</span><br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;Enter you name:<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;input</span>
+                                        <span class="attribute">type</span>=
+                                        <span class="value">"text"</span>
+                                        <span class="attribute">name</span>=
+                                        <span class="value">"fname"</span><span class="tag">&gt;</span><br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;br/&gt;</span><br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;Enter your age:<br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;input</span>
+                                        <span class="attribute">type</span>=
+                                        <span class="value">"text"</span>
+                                        <span class="attribute">name</span>=
+                                        <span class="value">"age"</span><span class="tag">&gt;</span><br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;br/&gt;</span><br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;input</span>
+                                        <span class="attribute">type</span>=
+                                        <span class="value">"submit"</span>
+                                        <span class="attribute">name</span>=
+                                        <span class="value">"Submit"</span><span class="tag">&gt;</span><br/><span class="tag">&lt;/form&gt;</span>;
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="tag-element">
+                            <h3 id="select-element"><code>&lt;select&gt;</code> Element</h3>
+                            <div class="current-tag">
+                                <div class="tag-description">
+                                    <p>
+                                        The HTML <code>select</code> element can be used to create a dropdown list. A list of choices for the dropdown list can be create
+                                        using one or more <code>option</code> elements. By default, only one <code>option</code> can be selected at a time.
+                                    </p>
+                                    <p>
+                                        The value of the selected <code>select</code>'s <code>name</code> and the <code>option</code>'s <code>value</code> attribute are sent 
+                                        as a key-value pair when the form is submitted.
+                                    </p>
+                                </div>
+
+                                <div class="code-illustration-container">
+                                    <code data-lang="htm5">
+                                        <span class="tag">&lt;select&gt;</span>
+                                        <span class="attribute">name</span>=
+                                        <span class="value">"rental-option"</span><span class="tag">&gt;</span><br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;option</span>
+                                        <span class="attribute">value</span>=
+                                        <span class="value">"small"</span><span class="tag">&gt;</span>Small<span class="tag">&lt;/option&gt;</span><br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;option</span>
+                                        <span class="attribute">value</span>=
+                                        <span class="value">"family"</span><span class="tag">&gt;</span>Family Sedan<span class="tag">&lt;/option&gt;</span><br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;option</span>
+                                        <span class="attribute">value</span>=
+                                        <span class="value">"lux"</span><span class="tag">&gt;</span>Luxury<span class="tag">&lt;/option&gt;</span><br/>
+                                        <span class="tag">&lt;/select&gt;</span>
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="tag-element">
+                            <h3 id="submitting-a-form"><code>Submitting a Form</code></h3>
+                            <div class="current-tag">
+                                <div class="tag-description">
+                                    <p>
+                                        Once we have collected information in a form we can send that information somewhere else by using the <code>action</code> and 
+                                        <code>method</code> attributes. The <code>action</code> attribute tells the formto send the information. A URl is assigned that
+                                        determines the recipient of the information. The <code>method</code> attribute tells the form what to do with that information once 
+                                        it's sent. An HTTP verb is assigned to the <code>method</code> attribute that determines the action to be performed.
+                                    </p>
+                                </div>
+
+                                <div class="code-illustration-container">
+                                    <code data-lang="htm5">
+                                        <span class="tag">&lt;form&gt;</span>
+                                        <span class="attribute">method</span>=
+                                        <span class="value">"PUT"</span>
+                                        <span class="attribute">action</span>=
+                                        <span class="value">"/index3.html"</span><span class="tag">&gt;</span><span class="tag">&lt;/form&gt;</span>
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="tag-element">
+                            <h3 id="datalist-element"><code>&lt;datalist&gt;</code> Element</h3>
+                            <div class="current-tag">
+                                <div class="tag-description">
+                                    <p>
+                                        When using an HTML input, a basic search/autocomplete functionality can be achieved by pairing an <code>&lt;input&gt;</code> with a 
+                                        <code>&lt;datalist&gt;</code>. To pair a <code>&lt;input&gt;</code> with a <code>&lt;datalist&gt;</code> the <code>&lt;input&gt;</code>
+                                        's <code>list</code> value must match the value of the <code>id</code> of the <code>&lt;datalist&gt;</code>. The <code>&lt;datalist&gt;</code>
+                                        element is used to store a list of <code>&lt;option&gt;</code>s.
+                                    </p>
+                                    <p>
+                                        The list of data is shown as a dropdown on an <code>input</code> field when a user clicks on the input field. As the user starts typing, the list 
+                                        will be updated to show elements that best match what has been typed into the input field. The actual list items are specified as multiple <code>option</code>
+                                        elements nested inside the datalist.
+                                    </p>
+                                    <p>
+                                        <code>datalist</code>s are ideal when providing users a list of pre-defined options, but to also allow them to write alternative inputs as well.
+                                    </p>
+                                </div>
+
+                                <div class="code-illustration-container">
+                                    <code data-lang="htm5">
+                                        <span class="tag">&lt;input</span>
+                                        <span class="attribute">list</span>=
+                                        <span class="value">"ide"</span><span class="tag">&gt;</span><br/><br/>
+                                        <span class="tag">&lt;datalist</span>
+                                        <span class="attribute">list</span>=
+                                        <span class="value">"ide"</span><span class="tag">&gt;</span><br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;option</span>
+                                        <span class="attribute">value</span>=
+                                        <span class="value">"small"</span><span class="tag">&gt;</span>Small<span class="tag">/&gt;</span><br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;option</span>
+                                        <span class="attribute">value</span>=
+                                        <span class="value">"Visual Studio Code"</span><span class="tag">&gt;</span>Family Sedan<span class="tag">/&gt;</span><br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;option</span>
+                                        <span class="attribute">value</span>=
+                                        <span class="value">"Atom"</span><span class="tag">/&gt;</span><br/>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;option</span>
+                                        <span class="attribute">value</span>=
+                                        <span class="value">"Sublime Text"</span><span class="tag">/&gt;</span><br/>
+                                        <span class="tag">&lt;/datalist&gt;</span>
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+                        <div class="tag-element">
+                            <h3 id="submittable-input"><code>Submittable Input</code></h3>
+                            <div class="current-tag">
+                                <div class="tag-description">
+                                    <p>
+                                        The HTML <code>&lt;input&gt;</code> elements can have a type attribute set to submit, by adding <code>type="submit"</code>. 
+                                        With this attribute included, a submit button will be rendered and, by default, will submit the <code>&lt;form&gt;</code> and 
+                                        execute its action.
+                                    </p>
+                                    <p>
+                                        The text of a submit button is set to <code>Submit</code> by default but can also be changed by modifying the <code>value</code> attribute.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="tag-element">
+                            <h3 id="label-element"><code>&lt;label&gt;</code> Element</h3>
+                            <div class="current-tag">
+                                <div class="tag-description">
+                                    <p>
+                                        The HTML <code>&lt;label&gt;</code> element provides identification for a specific <code>&lt;input&gt;</code> based on matching values
+                                        of the <code>&lt;input&gt;</code>'s <code>id</code> attribute and the <code>&lt;label&gt;</code> will focus the field of the related 
+                                        <code>&lt;input&gt;</code>.
+                                    </p>
+                                    <p>
+                                        The example code will create a text input field with the label text "Passowrd:" next to it. clicking on "Password:" on the page will 
+                                        focus the field for the related <code>&lt;input&gt;</code>.
+                                    </p>
+                                </div>
+
+                                <div class="code-illustration-container">
+                                    <code data-lang="htm5">
+                                        <span class="tag">&lt;label</span>
+                                        <span class="attribute">for</span>=
+                                        <span class="value">"password"</span>
+                                        <span class="tag">&gt;</span>Password:
+                                        <span class="tag">&lt;lable&gt;</span><br/>
+                                        <span class="tag">&lt;input</span>
+                                        <span class="attribute">type</span>=
+                                        <span class="value">"text"</span>
+                                        <span class="attribute">id</span>=
+                                        <span class="value">"password"</span>
+                                        <span class="attribute">name</span>=
+                                        <span class="value">"password"</span><span class="tag">/&gt;</span>
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="tag-element">
+                            <h3 id="required-attribute"><code>required Attribute</code></h3>
+                            <div class="current-tag">
+                                <div class="tag-description">
+                                    <p>
+                                        In HTML, input fields have an attribute called <code>required</code> which specifies that the field must include a value;
+                                    </p>
+                                    <p>
+                                        The example code block shows an input field that is required. The attribute can be written as <code>required="true"</code> or simple
+                                        <code>required</code>.
+                                    </p>
+                                </div>
+
+                                <div class="code-illustration-container">
+                                    <code data-lang="htm5">
+                                        <span class="tag">&lt;input</span>
+                                        <span class="attribute">type</span>=
+                                        <span class="value">"password"</span>
+                                        <span class="attribute">name</span>=
+                                        <span class="value">"password"</span>
+                                        <span class="attribute">required</span><span class="tag">/&gt;</span>
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tag-element">
+                            <h3 id="max-attribute"><code>max Attribute</code></h3>
+                            <div class="current-tag">
+                                <div class="tag-description">
+                                    <p>
+                                        HTML <code>&lt;input&gt;</code>s of type <code>number</code> have an attribute called <code>max</code> that specifies the maximum value
+                                        for the input field.
+                                    </p>
+                                    <p>
+                                        The example code block shows an <code>input</code> number field that is set to have a maximum value of <code>20</code>. Any value larger 
+                                        than 20 will mark the input field as having an error.
+                                    </p>
+                                </div>
+
+                                <div class="code-illustration-container">
+                                    <code data-lang="htm5">
+                                        <span class="tag">&lt;input</span>
+                                        <span class="attribute">type</span>=
+                                        <span class="value">"number"</span>
+                                        <span class="attribute">max</span>=
+                                        <span class="value">"20"</span><span class="tag">/&gt;</span>
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tag-element">
+                            <h3 id="maxlength-attribute"><code>maxlength Attribute</code></h3>
+                            <div class="current-tag">
+                                <div class="tag-description">
+                                    <p>
+                                        In HTML, input fields with type <code>text</code>have an attribute called <code>maxlength</code> which specifies the maximum number of 
+                                        characters that can be entered into the field. The code block shows an input field that accepts text that has a maximum length of <code>140</code> characters.
+                                    </p>
+                                </div>
+
+                                <div class="code-illustration-container">
+                                    <code data-lang="htm5">
+                                        <span class="tag">&lt;input</span>
+                                        <span class="attribute">type</span>=
+                                        <span class="value">"text"</span>
+                                        <span class="attribute">name</span>=
+                                        <span class="value">"tweet"</span>
+                                        <span class="attribute">maxlength</span>=
+                                        <span class="value">"140"</span><span class="tag">/&gt;</span>
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tag-element">
+                            <h3 id="pattern-attribute"><code>pattern Attribute</code></h3>
+                            <div class="current-tag">
+                                <div class="tag-description">
+                                    <p>
+                                        In a <code>text</code> input element, the pattern attribute uses a regular expression to match against (or validate) the value of the <code>&lt;input&gt;</code>
+                                        , when the form is submitted.
+                                    </p>
+                                </div>
+
+                                <div class="code-illustration-container">
+                                    <code data-lang="htm5">
+                                        <span class="tag">&lt;form&gt;</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                                        Country code:<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span class="tag">&lt;input</span>
+                                        <span class="attribute">type</span>=
+                                        <span class="value">"text"</span>
+                                        <span class="attribute">name</span>=
+                                        <span class="value">"country-code"</span>
+                                        <span class="attribute">pattern</span>=
+                                        <span class="value">"[A-Za-z]{3}"</span>
+                                        <span class="attribute">title</span>=
+                                        <span class="value">"Three letter county code"</span><span class="tag">/&gt;</span> <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span class="tag">&lt;input</span>
+                                        <span class="attribute">type</span>=
+                                        <span class="value">"submit"</span><span class="tag">/&gt;</span> <br/>
+                                        <span class="tag">&lt;/form&gt;</span><br/>
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tag-element">
+                            <h3 id="minlength-attribute"><code>minlength Attribute</code></h3>
+                            <div class="current-tag">
+                                <div class="tag-description">
+                                    <p>
+                                        In HTML, input fields with type <code>text</code>have an attribute called <code>minlength</code> which specifies the minimum number of 
+                                        characters that can be entered into the field. The code block shows an input field that accepts text that has a maximum length of <code>6</code> characters.
+                                    </p>
+                                </div>
+
+                                <div class="code-illustration-container">
+                                    <code data-lang="htm5">
+                                        <span class="tag">&lt;input</span>
+                                        <span class="attribute">type</span>=
+                                        <span class="value">"text"</span>
+                                        <span class="attribute">name</span>=
+                                        <span class="value">"username"</span>
+                                        <span class="attribute">minlength</span>=
+                                        <span class="value">"6"</span><span class="tag">/&gt;</span>
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tag-element">
+                            <h3 id="html-form-validators"><code>HTML Form Validators</code></h3>
+                            <div class="current-tag">
+                                <div class="tag-description">
+                                    <p>
+                                        HTML forms allow you to specify different kinds of validation vor your input fields to make sure that data is entered correctly before being 
+                                        submitted. HTML suppoets a number of different validators, including things like minimum value, minimum/maximum length, etc. The validators 
+                                        are specified as attributes on the <code>input</code> field.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tag-element">
+                            <h3 id="min-attribute"><code>min Attribute</code></h3>
+                            <div class="current-tag">
+                                <div class="tag-description">
+                                    <p>
+                                        In HTML, input fields with type <code>number</code>have an attribute called <code>min</code> which specifies the value that can be entered into the field. 
+                                        The code block shows an input number field that accepts a number with minimum value <code>1</code>.                                    </p>
+                                </div>
+
+                                <div class="code-illustration-container">
+                                    <code data-lang="htm5">
+                                        <span class="tag">&lt;input</span>
+                                        <span class="attribute">type</span>=
+                                        <span class="value">"number"</span>
+                                        <span class="attribute">name</span>=
+                                        <span class="value">"rating"</span>
+                                        <span class="attribute">min</span>=
+                                        <span class="value">"1"</span>
+                                        <span class="attribute">max</span>=
+                                        <span class="value">"10"</span><span class="tag">/&gt;</span>
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </section>
+            </div>
+        </main>
+    </body>
+</html>
