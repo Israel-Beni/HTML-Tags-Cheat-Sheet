@@ -138,7 +138,8 @@
                                     <code>
                                         <span class="tag">&lt;label</span>
                                         <span class="attribute">for</span>
-                                        <span class="value">"nrame"</span>First name:
+                                        <span class="value">"frame"</span><span class="tag">&gt;</span>
+                                        First name:
                                         <span class="tag">&lt;label&gt;</span>
                                         <br/>
                                         <span class="tag">&lt;input</span>
@@ -167,8 +168,8 @@
                                 <div class="tag-description">
                                     <p>
                                         A slider can be created by using the <code>type="range"</code> attribute on an HTML <code>input</code> element. 
-                                        The range slider will act as a selector between a minimum and a maximum value. These values are et using the <code>min</code> and 
-                                        <code>max</code> attributes respectively. The slider can be adjusted to move in different steps or increments usning the <code>
+                                        The range slider will act as a selector between a minimum and a maximum value. These values are set using the <code>min</code> and 
+                                        <code>max</code> attributes respectively. The slider can be adjusted to move in different steps or increments using the <code>
                                             step
                                         </code> attribute.
                                     </p>
@@ -235,7 +236,7 @@
                                         This renders a single row input field that users can type text inside.
                                     </p>
                                     <p>
-                                        The value of the selected/checked <code>&lt;input&gt;</code>'s <code>name</code> and <code>value</code> attribute of thsi element are 
+                                        The value of the selected/checked <code>&lt;input&gt;</code>'s <code>name</code> and <code>value</code> attribute of this element are 
                                         sent as a key-value pair when the form is submitted.
                                     </p>
                                 </div>
@@ -269,7 +270,7 @@
                             <div class="current-tag">
                                 <div class="tag-description">
                                     <p>
-                                        In order for a form to send data, it needs to be able to put it into key-value pairs. This is achieved by "settings": [
+                                        In order for a form to send data, it needs to be able to put it into key-value pairs. This is achieved by settings
                                         the <code>name</code> attribute of the <code>input</code> element. The <code>name</code> will become the <code>key</code> and the <code>value</code> of the 
                                         input will become the <code>value</code> the form submits corresponding to the key.
                                     </p>
@@ -305,7 +306,7 @@
                             <div class="current-tag">
                                 <div class="tag-description">
                                     <p>
-                                        The HTML <code>&lt;input&gt;</code> elements can have the attribute <code>type="radio"</code>  that renders a single row input field. 
+                                        The HTML <code>&lt;input&gt;</code> elements can have the attribute <code>type="radio"</code>  that renders a single row input field, 
                                         which allows the user to type censored text inside the field. It is used to type in sensitive information.
                                     </p>
                                     <p>
@@ -313,7 +314,7 @@
                                         sent as a key-value pair when the form is submitted.
                                     </p>
                                     <p>
-                                        The code block shows an example of fields for a a basic login form - the username and password fields.
+                                        The code block shows an example of fields for a basic login form - the username and password fields.
                                     </p>
                                 </div>
 
@@ -377,17 +378,17 @@
                             <div class="current-tag">
                                 <div class="tag-description">
                                     <p>
-                                        The HTML <code>form</code> element is used to collect and send information to an external sourse.
+                                        The HTML <code>&lt;form&gt;</code> element is used to collect and send information to an external source.
                                     </p>
                                     <p>
-                                        <code>form</code> can contain various input elements. When a user submits the form, information in these input
+                                        <code>&lt;form&gt;</code> can contain various input elements. When a user submits the form, information in these input
                                         elements is passed to the source which is named in the <code>action</code> attribute of the form.
                                     </p>
                                 </div>
                                     
                                 <div class="code-illustration-container">
                                     <code data-lang="htm5">
-                                        <span class="tag">&lt;form&gt;</span>
+                                        <span class="tag">&lt;form</span>
                                         <span class="attribute">method</span>=
                                         <span class="value">"post"</span>
                                         <span class="attribute">action</span>=
@@ -422,18 +423,18 @@
                             <div class="current-tag">
                                 <div class="tag-description">
                                     <p>
-                                        The HTML <code>select</code> element can be used to create a dropdown list. A list of choices for the dropdown list can be create
-                                        using one or more <code>option</code> elements. By default, only one <code>option</code> can be selected at a time.
+                                        The HTML <code>&lt;select&gt;</code> element can be used to create a dropdown list. A list of choices for the dropdown list can be create
+                                        using one or more <code>&lt;option&gt;</code> elements. By default, only one <code>&lt;option&gt;</code> can be selected at a time.
                                     </p>
                                     <p>
-                                        The value of the selected <code>select</code>'s <code>name</code> and the <code>option</code>'s <code>value</code> attribute are sent 
+                                        The value of the selected <code>&lt;select&gt;</code>'s <code>name</code> and the <code>&lt;option&gt;</code>'s <code>value</code> attribute are sent 
                                         as a key-value pair when the form is submitted.
                                     </p>
                                 </div>
 
                                 <div class="code-illustration-container">
                                     <code data-lang="htm5">
-                                        <span class="tag">&lt;select&gt;</span>
+                                        <span class="tag">&lt;select</span>
                                         <span class="attribute">name</span>=
                                         <span class="value">"rental-option"</span><span class="tag">&gt;</span><br/>
                                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;option</span>
@@ -458,7 +459,7 @@
                                 <div class="tag-description">
                                     <p>
                                         Once we have collected information in a form we can send that information somewhere else by using the <code>action</code> and 
-                                        <code>method</code> attributes. The <code>action</code> attribute tells the formto send the information. A URl is assigned that
+                                        <code>method</code> attributes. The <code>action</code> attribute tells the form to send the information. A URl is assigned that
                                         determines the recipient of the information. The <code>method</code> attribute tells the form what to do with that information once 
                                         it's sent. An HTTP verb is assigned to the <code>method</code> attribute that determines the action to be performed.
                                     </p>
@@ -466,7 +467,7 @@
 
                                 <div class="code-illustration-container">
                                     <code data-lang="htm5">
-                                        <span class="tag">&lt;form&gt;</span>
+                                        <span class="tag">&lt;form</span>
                                         <span class="attribute">method</span>=
                                         <span class="value">"PUT"</span>
                                         <span class="attribute">action</span>=
@@ -483,7 +484,7 @@
                                 <div class="tag-description">
                                     <p>
                                         When using an HTML input, a basic search/autocomplete functionality can be achieved by pairing an <code>&lt;input&gt;</code> with a 
-                                        <code>&lt;datalist&gt;</code>. To pair a <code>&lt;input&gt;</code> with a <code>&lt;datalist&gt;</code> the <code>&lt;input&gt;</code>
+                                        <code>&lt;datalist&gt;</code>. To pair an <code>&lt;input&gt;</code> with a <code>&lt;datalist&gt;</code> the <code>&lt;input&gt;</code>
                                         's <code>list</code> value must match the value of the <code>id</code> of the <code>&lt;datalist&gt;</code>. The <code>&lt;datalist&gt;</code>
                                         element is used to store a list of <code>&lt;option&gt;</code>s.
                                     </p>
@@ -552,7 +553,7 @@
                                         <code>&lt;input&gt;</code>.
                                     </p>
                                     <p>
-                                        The example code will create a text input field with the label text "Passowrd:" next to it. clicking on "Password:" on the page will 
+                                        The example code will create a text input field with the label text "Password:" next to it. Clicking on "Password:" on the page will 
                                         focus the field for the related <code>&lt;input&gt;</code>.
                                     </p>
                                 </div>
@@ -563,7 +564,7 @@
                                         <span class="attribute">for</span>=
                                         <span class="value">"password"</span>
                                         <span class="tag">&gt;</span>Password:
-                                        <span class="tag">&lt;lable&gt;</span><br/>
+                                        <span class="tag">&lt;label&gt;</span><br/>
                                         <span class="tag">&lt;input</span>
                                         <span class="attribute">type</span>=
                                         <span class="value">"text"</span>
@@ -613,7 +614,7 @@
                                     </p>
                                     <p>
                                         The example code block shows an <code>input</code> number field that is set to have a maximum value of <code>20</code>. Any value larger 
-                                        than 20 will mark the input field as having an error.
+                                        than <code>20</code> will mark the input field as having an error.
                                     </p>
                                 </div>
 
@@ -634,7 +635,7 @@
                             <div class="current-tag">
                                 <div class="tag-description">
                                     <p>
-                                        In HTML, input fields with type <code>text</code>have an attribute called <code>maxlength</code> which specifies the maximum number of 
+                                        In HTML, input fields with type <code>text</code> have an attribute called <code>maxlength</code> which specifies the maximum number of 
                                         characters that can be entered into the field. The code block shows an input field that accepts text that has a maximum length of <code>140</code> characters.
                                     </p>
                                 </div>
@@ -690,7 +691,7 @@
                             <div class="current-tag">
                                 <div class="tag-description">
                                     <p>
-                                        In HTML, input fields with type <code>text</code>have an attribute called <code>minlength</code> which specifies the minimum number of 
+                                        In HTML, input fields with type <code>text</code> have an attribute called <code>minlength</code> which specifies the minimum number of 
                                         characters that can be entered into the field. The code block shows an input field that accepts text that has a maximum length of <code>6</code> characters.
                                     </p>
                                 </div>
@@ -714,8 +715,8 @@
                             <div class="current-tag">
                                 <div class="tag-description">
                                     <p>
-                                        HTML forms allow you to specify different kinds of validation vor your input fields to make sure that data is entered correctly before being 
-                                        submitted. HTML suppoets a number of different validators, including things like minimum value, minimum/maximum length, etc. The validators 
+                                        HTML forms allow you to specify different kinds of validation for your input fields to make sure that data is entered correctly before being 
+                                        submitted. HTML supports a number of different validators, including things like minimum value, minimum/maximum length, etc. The validators 
                                         are specified as attributes on the <code>input</code> field.
                                     </p>
                                 </div>
@@ -727,8 +728,9 @@
                             <div class="current-tag">
                                 <div class="tag-description">
                                     <p>
-                                        In HTML, input fields with type <code>number</code>have an attribute called <code>min</code> which specifies the value that can be entered into the field. 
-                                        The code block shows an input number field that accepts a number with minimum value <code>1</code>.                                    </p>
+                                        In HTML, input fields with type <code>number</code> have an attribute called <code>min</code> which specifies the value that can be entered into the field. 
+                                        The code block shows an input number field that accepts a number with minimum value <code>1</code>.
+                                    </p>
                                 </div>
 
                                 <div class="code-illustration-container">
@@ -746,7 +748,7 @@
                                 </div>
                             </div>
                         </div>
-                    
+
                     </div>
                 </section>
             </div>
@@ -758,7 +760,7 @@
             // Get the button
             var theButton= document.getElementById("myButton");
 
-            // Wheb the user scrolls down 20px from the top of the document, show the button
+            // When the user scrolls down 20px from the top of the document, show the button
             window.onscroll = function() { scrollFunction() };
 
             function scrollFunction() {
