@@ -67,7 +67,7 @@ main {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
-    grid-gap: 1em;
+    grid-gap: 1em; 
 }
 
 .navigation-container {
@@ -99,7 +99,7 @@ nav h2 {
 .table-of-content {
     display: grid;
     grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-end: 2; 
     color: black;
     text-decoration: none;
     font-size: 16px;
