@@ -197,3 +197,8 @@ main p,
 #myButton:hover {
   background-color: #4b4949;
 }
+
+.sticky {
+  position: fixed;
+  top: 40px;
+}
