@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Capriola', sans-serif;
+}
+
+header {
+  height: 80px;
+  background-color: #141c3a;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header span {
+  color: orange;
+}
+
+.hamburger-menu {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.hamburger-menu span {
+  width: 2rem;
+  height: 0.2rem;
+  margin: 0.26rem 0;
+  display: inline-block;
+  background-color: orange;
+  transition: all 0.4s ease;
+  transform-origin: 0 0;
+}
+
+.open-menu span:nth-child(1) {
+  transform: rotate(45deg) translate(1px, -1px);
+}
+
+.open-menu span:nth-child(2) {
+  transform: scaleX(0);
+}
+
+.open-menu span:nth-child(3) {
+  transform: rotate(-45deg) translate(1px, 0);
+}
+
+.navigation-container {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0); /* Black fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+.navigation-container.menu-is-open {
+  width: 100%;
+}
+
+.nav-menu {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+.nav-menu a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}

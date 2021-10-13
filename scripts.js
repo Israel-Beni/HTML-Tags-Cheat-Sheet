@@ -35,3 +35,12 @@ const stickyNav = () => {
     ? nav.classList.add('sticky')
     : nav.classList.remove('sticky')
 }
+
+// Hamburger menu animation
+const click = document.querySelector('.hamburger-menu')
+const navContainer = document.querySelector('.navigation-container')
+
+click.addEventListener('click', () => {
+  click.classList.toggle('open-menu')
+  navContainer.classList.toggle('menu-is-open')
+})

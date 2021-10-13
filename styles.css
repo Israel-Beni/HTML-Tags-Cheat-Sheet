@@ -62,7 +62,7 @@ main {
 
 .main-content-container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 262px auto;
   justify-content: center;
   grid-gap: 1em;
 }
@@ -204,6 +204,11 @@ main p,
 }
 
 @media only screen and (max-width: 600px) {
-  .nav-menu {
+  header {
+    display: none;
+  }
+
+  .main-content-container {
+    grid-template-columns: 1fr 1fr;
   }
 }
