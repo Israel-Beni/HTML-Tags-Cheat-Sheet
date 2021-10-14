@@ -1,0 +1,288 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Capriola', sans-serif;
+}
+
+main {
+  margin-top: 100px;
+}
+
+header {
+  height: 80px;
+  background-color: #141c3a;
+  color: #fff;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header span {
+  color: orange;
+  z-index: 100;
+}
+
+.header-static {
+  position: static;
+}
+
+.cheat-sheet {
+  margin-left: 1rem;
+}
+
+.hamburger-menu {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 100;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.noscroll .hamburger-menu {
+  position: fixed;
+}
+
+.hamburger-menu span {
+  width: 2rem;
+  height: 0.2rem;
+  margin: 0.26rem 0;
+  display: inline-block;
+  background-color: orange;
+  transition: all 0.4s ease;
+  transform-origin: 0 0;
+}
+
+.open-menu span:nth-child(1) {
+  transform: rotate(45deg) translate(1px, -1px);
+}
+
+.open-menu span:nth-child(2) {
+  transform: scaleX(0);
+}
+
+.open-menu span:nth-child(3) {
+  transform: rotate(-45deg) translate(1px, 0);
+}
+
+.navigation-container {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.95);
+  transition: 0.5s;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.navigation-container.menu-is-open {
+  width: 100%;
+}
+
+.nav-menu {
+  position: relative;
+  width: 100%;
+}
+
+.nav-menu h2 {
+  color: #fff;
+  margin: 1rem 1rem;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #3299ff;
+  display: block;
+  transition: 0.3s;
+  font-size: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.nav-menu a:hover {
+  color: #add6ff;
+}
+
+/* .arrow {
+  visibility: hidden;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+} */
+
+/* .arrow i {
+  font-size: 3rem;
+  color: orange;
+} */
+
+/* .bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+} */
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/* .menu-is-open .arrow {
+  visibility: visible;
+} */
+
+.noscroll {
+  overflow: hidden;
+}
+
+/* Tag Elements Section */
+.tag-elements {
+  margin: 1rem;
+}
+
+.tag-element {
+  margin-bottom: 2rem;
+}
+
+.current-tag {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.tag-description {
+  margin-bottom: 0.5rem;
+}
+
+.tag-description p {
+  color: #201f1f;
+}
+
+p code {
+  background-color: #ebe9e8;
+  border-radius: 0.3em;
+  padding: 0 0.25em 0 0.25em;
+}
+
+.code-illustration-container {
+  background-color: #211e2f;
+  color: white;
+  padding: 1em;
+  border-radius: 10px;
+  display: inline-block;
+  margin: auto;
+}
+
+.tag {
+  color: #e85d7f;
+}
+
+.attribute {
+  color: #b4d353;
+}
+
+.value {
+  color: #ffe083;
+}
+
+@media screen and (min-width: 481px) {
+  header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .nav-menu {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1025px) and (min-height: 670px) {
+  .cheat-sheet p {
+    font-size: 1.5rem;
+  }
+
+  .cheat-sheet h1 {
+    font-size: 2.5rem;
+  }
+
+  main {
+    margin: 0 1rem;
+  }
+
+  header {
+    height: 120px;
+    position: relative;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+
+  .main-content-container {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 262px auto;
+    max-width: 1200px;
+  }
+
+  .navigation-container {
+    height: 100%;
+    width: 262px;
+    font-size: 18px;
+    top: -40px;
+    background-color: #fff;
+    text-align: left;
+    position: relative;
+    overflow-x: unset;
+    overflow-y: unset;
+  }
+
+  .nav-menu {
+    width: 100%;
+    border: 0.17rem solid #10162f;
+    position: sticky;
+    top: 20px;
+  }
+
+  .navigation-container h2 {
+    font-size: 1.5rem;
+    color: black;
+    margin: 1rem 0 0.5rem 1rem;
+    text-align: left;
+  }
+
+  .navigation-container a {
+    margin-bottom: 0.5rem;
+    text-align: left;
+    color: black;
+  }
+
+  .navigation-container a:hover {
+    color: #7f7f7f;
+  }
+}

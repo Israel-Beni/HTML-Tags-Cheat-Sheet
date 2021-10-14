@@ -1,37 +1,43 @@
-//Scroll to top button
-// Get the button
+// Hamburger menu animations
+const click = document.querySelector('.hamburger-menu')
+const navContainer = document.querySelector('.navigation-container')
+// const arrow = document.querySelector('.arrow')
+const body = document.querySelector('body')
+const header = document.querySelector('header')
+const clickItems = document.getElementsByClassName('table-of-content')
 
-var theButton = document.getElementById('myButton')
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () {
-  scrollFunction()
-  stickyNav()
+const setUpListeners = () => {
+  click.addEventListener('click', () => {
+    click.classList.toggle('open-menu')
+    navContainer.classList.toggle('menu-is-open')
+    body.classList.toggle('noscroll')
+    header.classList.toggle('header-static')
+  })
+  Array.from(clickItems).forEach((element) => {
+    element.addEventListener('click', () => {
+      click.classList.toggle('open-menu')
+      navContainer.classList.toggle('menu-is-open')
+      body.classList.toggle('noscroll')
+      header.classList.toggle('header-static')
+    })
+  })
 }
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    theButton.style.display = 'block'
-  } else {
-    theButton.style.display = 'none'
+window.addEventListener('resize', () => {
+  if (window.innerWidth < 1025 || window.innerHeight < 670) {
+    setUpListeners()
+  } else if (window.innerWidth > 1025) {
+    click.addEventListener('click', () => {
+      return
+    })
+    Array.from(clickItems).forEach((element) => {
+      element.addEventListener('click', () => {
+        return
+      })
+    })
   }
-}
+})
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0
-  document.documentElement.scrollTop = 0
-}
-
-//Sticky nav bar
-const nav = document.querySelector('.nav-menu')
-
-const initialPos = nav.offsetTop
-
-console.log(initialPos)
-
-const stickyNav = () => {
-  window.pageYOffset >= initialPos
-    ? nav.classList.add('sticky')
-    : nav.classList.remove('sticky')
+window.onload = () => {
+  window.innerWidth < 1025 ? setUpListeners() : null
 }
