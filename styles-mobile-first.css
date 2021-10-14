@@ -85,6 +85,7 @@ header span {
   background-color: rgba(0, 0, 0, 0.95);
   transition: 0.5s;
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .navigation-container.menu-is-open {
@@ -117,23 +118,23 @@ header span {
   color: #add6ff;
 }
 
-.arrow {
+/* .arrow {
   visibility: hidden;
   position: fixed;
   bottom: 20px;
   right: 20px;
-}
+} */
 
-.arrow i {
+/* .arrow i {
   font-size: 3rem;
   color: orange;
-}
+} */
 
-.bounce {
+/* .bounce {
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
-}
+} */
 
 @keyframes bounce {
   0%,
@@ -151,9 +152,9 @@ header span {
   }
 }
 
-.menu-is-open .arrow {
+/* .menu-is-open .arrow {
   visibility: visible;
-}
+} */
 
 .noscroll {
   overflow: hidden;
@@ -231,7 +232,7 @@ p code {
   }
 
   main {
-    margin: 0;
+    margin: 0 1rem;
   }
 
   header {
@@ -243,9 +244,10 @@ p code {
   }
 
   .main-content-container {
-    margin: 1rem;
+    margin: 1rem auto;
     display: grid;
     grid-template-columns: 262px auto;
+    max-width: 1200px;
   }
 
   .navigation-container {
@@ -257,6 +259,7 @@ p code {
     text-align: left;
     position: relative;
     overflow-x: unset;
+    overflow-y: unset;
   }
 
   .nav-menu {
