@@ -222,7 +222,7 @@ p code {
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1025px) and (min-height: 670px) {
   .cheat-sheet p {
     font-size: 1.5rem;
   }

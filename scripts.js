@@ -24,7 +24,7 @@ const setUpListeners = () => {
 }
 
 window.addEventListener('resize', () => {
-  if (window.innerWidth < 1025) {
+  if (window.innerWidth < 1025 || window.innerHeight < 670) {
     setUpListeners()
   } else if (window.innerWidth > 1025) {
     click.addEventListener('click', () => {
